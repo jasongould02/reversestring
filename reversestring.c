@@ -10,19 +10,13 @@ int main() {
 
     char reverse[BUFFER_SIZE];
     int slength = strlen(s);
-    if(s[slength] == '\n' || s[slength] == ' ') {
-        s[slength] = ' '; // Empty String
-        printf("empty string\n");
-    }
+
     for(int i = 0; i < slength; i++) {
         reverse[i] = s[slength-i-1];
     }
 
     printf("Original: %s", s);
-    printf("Reversed: %s", reverse);
-
-    //printf("Press ENTER to continue\n");
-    //getchar();    
+    printf("Reversed: %s", reverse);  
 
     return 0;
 }
